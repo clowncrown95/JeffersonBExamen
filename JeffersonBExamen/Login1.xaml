@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JeffersonBExamen.Login1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Examen" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+            </Frame>
+            <Image Source="logo"/>
+            <Label Text="Login" FontSize="Subtitle" HorizontalOptions="Center"/>
+
+            <Label Text="Usuario" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtUser" Keyboard="Text"/>
+
+            <Label Text="Contraseña" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtPass" Keyboard="Text" IsPassword="True"/>
+
+            <Button x:Name="btnLogin" Text="Login" Clicked="btnLogin_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
